@@ -1,0 +1,56 @@
+<h3>Transfert Argent</h3>
+<div  style="width: 400px;">
+  <form [formGroup]="transfertForm"  (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="nom_emetteur">Nom Emetteur</label>
+      <input type="text" class="form-control" id="nom_emetteur" required  formControlName="nom_emetteur">
+    </div>
+
+    <div class="form-group">
+      <label for="prenom_emetteur">Prenom Emetteur</label>
+      <input type="text" class="form-control" id="prenom_emetteur" required  formControlName="prenom_emetteur">
+    </div>
+
+    <div class="form-group">
+      <label for="tel_emetteur">Telephone Emetteur</label>
+      <input type="text" class="form-control" id="tel_emetteur" required  formControlName="tel_emetteur">
+    </div>
+
+    <div class="form-group">
+        <label for="cin">CIN Emetteur</label>
+        <input type="text" class="form-control" id="cin" required  formControlName="cin">
+      </div>
+
+      <div class="form-group">
+        <label for="nom_recepteur">Nom Recepteur</label>
+        <input type="text" class="form-control" id="nom_recepteur" required  formControlName="nom_recepteur">
+      </div>
+
+      <div class="form-group">
+        <label for="prenom_recepteur">Prenom Recepteur</label>
+        <input type="text" class="form-control" id="prenom_recepteur" required  formControlName="prenom_recepteur">
+      </div>
+
+      <div class="form-group">
+        <label for="tel_recepteur">Telephone Recepteur</label>
+        <input type="text" class="form-control" id="tel_recepteur" required  formControlName="tel_recepteur">
+      </div>
+
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="text" class="form-control" id="date" required  formControlName="date">
+      </div>
+
+      <div class="form-group">
+        <label for="montant">Montant</label>
+        <input type="text" class="form-control" id="montant" required  formControlName="montant">
+      </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<div>
+  <h4>You submitted successfully!</h4>
+  <!-- <button class="btn btn-success" (click)="newTransfert()">Add</button> -->
+</div>
